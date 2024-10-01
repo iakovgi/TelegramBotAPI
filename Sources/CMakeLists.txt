@@ -10,7 +10,6 @@ install(DIRECTORY Headers/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 install(EXPORT ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX}/cmake)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::Core PRIVATE Qt6::Network)
-target_link_libraries(${PROJECT_NAME} PRIVATE OpenSSL::SSL)
 
 target_include_directories(${PROJECT_NAME} PRIVATE Headers)
 target_sources(${PROJECT_NAME}

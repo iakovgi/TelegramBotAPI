@@ -17,7 +17,6 @@ set(CMAKE_AUTOMOC ON)
 
 
 find_package(Qt6 REQUIRED COMPONENTS Core Network)		
-find_package(OpenSSL REQUIRED)				
 
 
 add_subdirectory(Sources)
